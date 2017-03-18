@@ -4,8 +4,11 @@
 # Author: Qixue Xiao <xiaoqixue_1@163.com>
 #Description: 
 
-git clone https://github.com/longld/peda.git ~/peda
-echo "source ~/peda/peda.py" >> ~/.gdbinit
+mv ~/.gdbinit ~/.gdbinit.bak
+git clone https://github.com/akiym/pedal.git ~/pedal
+echo "source ~/pedal/peda.py" >> ~/.gdbinit
+#git clone https://github.com/longld/peda.git ~/peda
+#echo "source ~/peda/peda.py" >> ~/.gdbinit
 # These are other settings I have found useful
  
 # Intel syntax is more readable
