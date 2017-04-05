@@ -5,10 +5,15 @@
 #Description: 
 
 mv ~/.gdbinit ~/.gdbinit.bak
-git clone https://github.com/akiym/pedal.git ~/pedal
-echo "source ~/pedal/peda.py" >> ~/.gdbinit
-#git clone https://github.com/longld/peda.git ~/peda
-#echo "source ~/peda/peda.py" >> ~/.gdbinit
+
+if [ "W"$1 = "Wpedal" ]
+then
+    git clone https://github.com/akiym/pedal.git ~/pedal
+    echo "source ~/pedal/peda.py" >> ~/.gdbinit
+else
+    git clone https://github.com/longld/peda.git ~/peda
+    echo "source ~/peda/peda.py" >> ~/.gdbinit
+fi
 # These are other settings I have found useful
  
 # Intel syntax is more readable
