@@ -29,6 +29,9 @@ echo "set history filename ~/.gdb_history" >> ~/.gdbinit
 echo "set history size 32768" >> ~/.gdbinit
 echo "set history expansion on" >> ~/.gdbinit
 
+echo "pset option context none" >> ~/.gdbinit
+echo "pset option clearscr off" >> ~/.gdbinit
+
 
 echo "ref: http://security.cs.pub.ro/hexcellents/wiki/kb/toolset/peda"
 echo "DONE! debug your program with gdb and enjoy"
